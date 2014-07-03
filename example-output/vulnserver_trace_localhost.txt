@@ -1,0 +1,630 @@
+sleepthreadid: 0
+Image loaded: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe at 400000
+Image loaded: C:\Users\sunirge\Downloads\vulnserver\essfunc.dll at 62500000
+Image loaded: C:\Windows\System32\wshtcpip.dll at 74a00000
+Image loaded: C:\Windows\system32\mswsock.dll at 74f00000
+Image loaded: C:\Windows\system32\KERNELBASE.dll at 757f0000
+Image loaded: C:\Windows\system32\user32.dll at 76ad0000
+Image loaded: C:\Windows\system32\IMM32.DLL at 76bf0000
+Image loaded: C:\Windows\system32\USP10.dll at 76ca0000
+Image loaded: C:\Windows\system32\kernel32.dll at 76d40000
+UnhandledExceptionFilter loaded
+Image loaded: C:\Windows\system32\GDI32.dll at 76ec0000
+Image loaded: C:\Windows\system32\MSCTF.dll at 77130000
+Image loaded: C:\Windows\system32\msvcrt.dll at 77200000
+Image loaded: C:\Windows\system32\RPCRT4.dll at 772b0000
+Image loaded: C:\Windows\system32\WS2_32.DLL at 77360000
+Recv loaded
+Image loaded: C:\Windows\SYSTEM32\ntdll.dll at 774d0000
+Image loaded: C:\Windows\system32\LPK.dll at 77620000
+Image loaded: C:\Windows\system32\NSI.dll at 776f0000
+thread begin 0
+thread end 0 code 0
+thread begin 1
+thread begin 2
+TID 2 Before: recv 7c, 5c3508, 1000, 0
+Peer name: 127.0.0.1
+Input IP address equals peer name, tainting 
+TID: 2 After: recv  returns 5
+Recv on tid: 2
+Read length: 5
+Read data: HELP
+
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 48: dl[T]: 48: dx[T]: 48: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 48: ecx: 404248: ds: 23: cl: 404248: ch: 404248: cx: 404248: dl[T]: 48: dx[T]: 48: :Read Flags: :Read Memory: 404244 :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 772101e6:Disasm mov dl, byte ptr [eax-0x3]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3509 [T] :
+TID: 2:IP: 772101e9:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 45: dl[T]: 45: dx[T]: 45: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101eb:Disasm jz 0x77210225:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 772101ed:Disasm cmp dl, byte ptr [ecx-0x3]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 45: ecx: 404248: ds: 23: cl: 404248: ch: 404248: cx: 404248: dl[T]: 45: dx[T]: 45: :Read Flags: :Read Memory: 404245 :
+TID: 2:IP: 772101f0:Disasm jnz 0x77210225:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 772101f2:Disasm mov dl, byte ptr [eax-0x2]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c350a [T] :
+TID: 2:IP: 772101f5:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4c: dl[T]: 4c: dx[T]: 4c: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101f7:Disasm jz 0x7721023f:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 772101f9:Disasm cmp dl, byte ptr [ecx-0x2]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4c: ecx: 404248: ds: 23: cl: 404248: ch: 404248: cx: 404248: dl[T]: 4c: dx[T]: 4c: :Read Flags: :Read Memory: 404246 :
+TID: 2:IP: 772101fc:Disasm jnz 0x7721023f:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 772101fe:Disasm mov dl, byte ptr [eax-0x1]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c350b [T] :
+TID: 2:IP: 77210201:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 50: dl[T]: 50: dx[T]: 50: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210203:Disasm jz 0x77210232:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 77210205:Disasm cmp dl, byte ptr [ecx-0x1]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 50: ecx: 404248: ds: 23: cl: 404248: ch: 404248: cx: 404248: dl[T]: 50: dx[T]: 50: :Read Flags: :Read Memory: 404247 :
+TID: 2:IP: 77210208:Disasm jnz 0x77210232:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c350c [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: a: dl[T]: a: dx[T]: a: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: a: ecx: 404248: ds: 23: cl: 404248: ch: 404248: cx: 404248: dl[T]: a: dx[T]: a: :Read Flags: :Read Memory: 404248 :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 283: :Read Flags: 0:[T 40:zf ]:Values:283:Read Memory: :
+TID: 2:IP: 7720b478:Disasm movzx eax, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c350c [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 20: eax[T]: a: al[T]: a: ah[T]: a: ax[T]: a: cl: 20: ch: 20: cx: 20: :Read Flags: :Read Memory: :
+TID: 2:IP: 401989:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: ffffffea: al[T]: ffffffea: ah[T]: ffffffea: ax[T]: ffffffea: :Read Flags: :Read Memory: :
+TID: 2:IP: 40198b:Disasm jnz 0x4019d6:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 282: :Read Flags: 0:[T 40:zf ]:Values:282:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 48: dl[T]: 48: dx[T]: 48: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 48: ecx: 40427c: ds: 23: cl: 40427c: ch: 40427c: cx: 40427c: dl[T]: 48: dx[T]: 48: :Read Flags: :Read Memory: 40427c :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c3509: ds: 23: al: 5c3509: ah: 5c3509: ax: 5c3509: :Read Flags: :Read Memory: 5c3509 [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 45: dl[T]: 45: dx[T]: 45: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 45: ecx: 40427d: ds: 23: cl: 40427d: ch: 40427d: cx: 40427d: dl[T]: 45: dx[T]: 45: :Read Flags: :Read Memory: 40427d :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c350a: ds: 23: al: 5c350a: ah: 5c350a: ax: 5c350a: :Read Flags: :Read Memory: 5c350a [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 4c: dl[T]: 4c: dx[T]: 4c: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 4c: ecx: 40427e: ds: 23: cl: 40427e: ch: 40427e: cx: 40427e: dl[T]: 4c: dx[T]: 4c: :Read Flags: :Read Memory: 40427e :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c350b: ds: 23: al: 5c350b: ah: 5c350b: ax: 5c350b: :Read Flags: :Read Memory: 5c350b [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 50: dl[T]: 50: dx[T]: 50: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 50: ecx: 40427f: ds: 23: cl: 40427f: ch: 40427f: cx: 40427f: dl[T]: 50: dx[T]: 50: :Read Flags: :Read Memory: 40427f :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID 2 Before: recv 7c, 5c3508, 1000, 0
+Peer name: 127.0.0.1
+Input IP address equals peer name, tainting 
+TID: 2 After: recv  returns 6b
+Recv on tid: 2
+Read length: 6b
+Read data: KSTET aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 404248: ds: 23: cl: 404248: ch: 404248: cx: 404248: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 404244 :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 48: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 48: ch: 48: cx: 48: :Read Flags: :Read Memory: :
+TID: 2:IP: 401989:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: 3: al[T]: 3: ah[T]: 3: ax[T]: 3: :Read Flags: :Read Memory: :
+TID: 2:IP: 40198b:Disasm jnz 0x4019d6:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 4b: ecx: 40427c: ds: 23: cl: 40427c: ch: 40427c: cx: 40427c: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 40427c :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 7720b478:Disasm movzx eax, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 48: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 48: ch: 48: cx: 48: :Read Flags: :Read Memory: :
+TID: 2:IP: 4019f1:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: 3: al[T]: 3: ah[T]: 3: ax[T]: 3: :Read Flags: :Read Memory: :
+TID: 2:IP: 4019f3:Disasm jnz 0x401a4b:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 404384: ds: 23: cl: 404384: ch: 404384: cx: 404384: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 404380 :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 283: :Read Flags: 0:[T 40:zf ]:Values:283:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 53: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 53: ch: 53: cx: 53: :Read Flags: :Read Memory: :
+TID: 2:IP: 401a66:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: fffffff8: al[T]: fffffff8: ah[T]: fffffff8: ax[T]: fffffff8: :Read Flags: :Read Memory: :
+TID: 2:IP: 401a68:Disasm jnz 0x401aef:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 282: :Read Flags: 0:[T 40:zf ]:Values:282:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 40439f: ds: 23: cl: 40439f: ch: 40439f: cx: 40439f: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 40439b :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 287: :Read Flags: 0:[T 40:zf ]:Values:287:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 52: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 52: ch: 52: cx: 52: :Read Flags: :Read Memory: :
+TID: 2:IP: 401b0a:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: fffffff9: al[T]: fffffff9: ah[T]: fffffff9: ax[T]: fffffff9: :Read Flags: :Read Memory: :
+TID: 2:IP: 401b0c:Disasm jnz 0x401b93:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 286: :Read Flags: 0:[T 40:zf ]:Values:286:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 4043c1: ds: 23: cl: 4043c1: ch: 4043c1: cx: 4043c1: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 4043bd :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 297: :Read Flags: 0:[T 40:zf ]:Values:297:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 4c: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 4c: ch: 4c: cx: 4c: :Read Flags: :Read Memory: :
+TID: 2:IP: 401bae:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: ffffffff: al[T]: ffffffff: ah[T]: ffffffff: ax[T]: ffffffff: :Read Flags: :Read Memory: :
+TID: 2:IP: 401bb0:Disasm jnz 0x401c37:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 286: :Read Flags: 0:[T 40:zf ]:Values:286:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 4043e2: ds: 23: cl: 4043e2: ch: 4043e2: cx: 4043e2: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 4043de :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 283: :Read Flags: 0:[T 40:zf ]:Values:283:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 53: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 53: ch: 53: cx: 53: :Read Flags: :Read Memory: :
+TID: 2:IP: 401c52:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: fffffff8: al[T]: fffffff8: ah[T]: fffffff8: ax[T]: fffffff8: :Read Flags: :Read Memory: :
+TID: 2:IP: 401c54:Disasm jnz 0x401cdb:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 282: :Read Flags: 0:[T 40:zf ]:Values:282:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 4043f7: ds: 23: cl: 4043f7: ch: 4043f7: cx: 4043f7: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 4043f3 :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 283: :Read Flags: 0:[T 40:zf ]:Values:283:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 54: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 54: ch: 54: cx: 54: :Read Flags: :Read Memory: :
+TID: 2:IP: 401cf6:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: fffffff7: al[T]: fffffff7: ah[T]: fffffff7: ax[T]: fffffff7: :Read Flags: :Read Memory: :
+TID: 2:IP: 401cf8:Disasm jnz 0x401dda:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 282: :Read Flags: 0:[T 40:zf ]:Values:282:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 40440c: ds: 23: cl: 40440c: ch: 40440c: cx: 40440c: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 404408 :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 47: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 47: ch: 47: cx: 47: :Read Flags: :Read Memory: :
+TID: 2:IP: 401df5:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: 4: al[T]: 4: ah[T]: 4: ax[T]: 4: :Read Flags: :Read Memory: :
+TID: 2:IP: 401df7:Disasm jnz 0x401ead:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 404420: ds: 23: cl: 404420: ch: 404420: cx: 404420: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 40441c :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 77210218:Disasm movzx eax, byte ptr [eax-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 7720b47e:Disasm sub eax, ecx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: ecx: 47: eax[T]: 4b: al[T]: 4b: ah[T]: 4b: ax[T]: 4b: cl: 47: ch: 47: cx: 47: :Read Flags: :Read Memory: :
+TID: 2:IP: 401ec8:Disasm test eax, eax:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eax[T]: 4: al[T]: 4: ah[T]: 4: ax[T]: 4: :Read Flags: :Read Memory: :
+TID: 2:IP: 401eca:Disasm jnz 0x401f1d:IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 772101d5:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c3508: ds: 23: al: 5c3508: ah: 5c3508: ax: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] :
+TID: 2:IP: 772101dd:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101df:Disasm jz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101e1:Disasm cmp dl, byte ptr [ecx-0x4]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 4b: ecx: 404434: ds: 23: cl: 404434: ch: 404434: cx: 404434: dl[T]: 4b: dx[T]: 4b: :Read Flags: :Read Memory: 404430 :
+TID: 2:IP: 772101e4:Disasm jnz 0x77210218:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 772101e6:Disasm mov dl, byte ptr [eax-0x3]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c3509 [T] :
+TID: 2:IP: 772101e9:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 53: dl[T]: 53: dx[T]: 53: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101eb:Disasm jz 0x77210225:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 206: :Read Flags: 0:[T 40:zf ]:Values:206:Read Memory: :
+TID: 2:IP: 772101ed:Disasm cmp dl, byte ptr [ecx-0x3]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 53: ecx: 404434: ds: 23: cl: 404434: ch: 404434: cx: 404434: dl[T]: 53: dx[T]: 53: :Read Flags: :Read Memory: 404431 :
+TID: 2:IP: 772101f0:Disasm jnz 0x77210225:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 772101f2:Disasm mov dl, byte ptr [eax-0x2]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c350a [T] :
+TID: 2:IP: 772101f5:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 54: dl[T]: 54: dx[T]: 54: :Read Flags: :Read Memory: :
+TID: 2:IP: 772101f7:Disasm jz 0x7721023f:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 772101f9:Disasm cmp dl, byte ptr [ecx-0x2]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 54: ecx: 404434: ds: 23: cl: 404434: ch: 404434: cx: 404434: dl[T]: 54: dx[T]: 54: :Read Flags: :Read Memory: 404432 :
+TID: 2:IP: 772101fc:Disasm jnz 0x7721023f:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 772101fe:Disasm mov dl, byte ptr [eax-0x1]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c350b [T] :
+TID: 2:IP: 77210201:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 45: dl[T]: 45: dx[T]: 45: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210203:Disasm jz 0x77210232:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 77210205:Disasm cmp dl, byte ptr [ecx-0x1]:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: edx[T]: 45: ecx: 404434: ds: 23: cl: 404434: ch: 404434: cx: 404434: dl[T]: 45: dx[T]: 45: :Read Flags: :Read Memory: 404433 :
+TID: 2:IP: 77210208:Disasm jnz 0x77210232:IMG: C:\Windows\system32\msvcrt.dll:RTN: _itow:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c350c: ds: 23: al: 5c350c: ah: 5c350c: ax: 5c350c: :Read Flags: :Read Memory: 5c350c [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 54: dl[T]: 54: dx[T]: 54: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 54: ecx: 404434: ds: 23: cl: 404434: ch: 404434: cx: 404434: dl[T]: 54: dx[T]: 54: :Read Flags: :Read Memory: 404434 :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7720b46e:Disasm mov dl, byte ptr [eax]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eax: 5c350d: ds: 23: al: 5c350d: ah: 5c350d: ax: 5c350d: :Read Flags: :Read Memory: 5c350d [T] :
+TID: 2:IP: 7720b470:Disasm test dl, dl:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 20: dl[T]: 20: dx[T]: 20: :Read Flags: :Read Memory: :
+TID: 2:IP: 7720b472:Disasm jz 0x7720b478:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 202: :Read Flags: 0:[T 40:zf ]:Values:202:Read Memory: :
+TID: 2:IP: 7720b474:Disasm cmp dl, byte ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: edx[T]: 20: ecx: 404435: ds: 23: cl: 404435: ch: 404435: cx: 404435: dl[T]: 20: dx[T]: 20: :Read Flags: :Read Memory: 404435 :
+TID: 2:IP: 7720b476:Disasm jz 0x7720b484:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncmp:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3508: ds: 23: si: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] 5c3509 [T] 5c350a [T] 5c350b [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 4554534b: al[T]: 4554534b: ah[T]: 4554534b: ax[T]: 4554534b: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 4554534b: al[T]: 4554534b: ah[T]: 4554534b: ax[T]: 4554534b: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: c453524a: eax[T]: baabacb4: al[T]: baabacb4: ah[T]: baabacb4: ax[T]: baabacb4: dl[T]: c453524a: dh[T]: c453524a: dx[T]: c453524a: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3508: ds: 23: si: 5c3508: :Read Flags: :Read Memory: 5c3508 [T] 5c3509 [T] 5c350a [T] 5c350b [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7ef8fefe: al[T]: 7ef8fefe: ah[T]: 7ef8fefe: ax[T]: 7ef8fefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4918: edx[T]: 4554534b: ds: 23: dl[T]: 4554534b: dh[T]: 4554534b: dx[T]: 4554534b: di: 5c4918: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c350c: ds: 23: si: 5c350c: :Read Flags: :Read Memory: 5c350c [T] 5c350d [T] 5c350e [T] 5c350f [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61612054: al[T]: 61612054: ah[T]: 61612054: ax[T]: 61612054: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61612054: al[T]: 61612054: ah[T]: 61612054: ax[T]: 61612054: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0601f53: eax[T]: 9e9edfab: al[T]: 9e9edfab: ah[T]: 9e9edfab: ax[T]: 9e9edfab: dl[T]: e0601f53: dh[T]: e0601f53: dx[T]: e0601f53: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c350c: ds: 23: si: 5c350c: :Read Flags: :Read Memory: 5c350c [T] 5c350d [T] 5c350e [T] 5c350f [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efec0f8: al[T]: 7efec0f8: ah[T]: 7efec0f8: ax[T]: 7efec0f8: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c491c: edx[T]: 61612054: ds: 23: dl[T]: 61612054: dh[T]: 61612054: dx[T]: 61612054: di: 5c491c: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3510: ds: 23: si: 5c3510: :Read Flags: :Read Memory: 5c3510 [T] 5c3511 [T] 5c3512 [T] 5c3513 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3510: ds: 23: si: 5c3510: :Read Flags: :Read Memory: 5c3510 [T] 5c3511 [T] 5c3512 [T] 5c3513 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4920: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4920: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3514: ds: 23: si: 5c3514: :Read Flags: :Read Memory: 5c3514 [T] 5c3515 [T] 5c3516 [T] 5c3517 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3514: ds: 23: si: 5c3514: :Read Flags: :Read Memory: 5c3514 [T] 5c3515 [T] 5c3516 [T] 5c3517 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4924: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4924: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3518: ds: 23: si: 5c3518: :Read Flags: :Read Memory: 5c3518 [T] 5c3519 [T] 5c351a [T] 5c351b [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3518: ds: 23: si: 5c3518: :Read Flags: :Read Memory: 5c3518 [T] 5c3519 [T] 5c351a [T] 5c351b [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4928: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4928: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c351c: ds: 23: si: 5c351c: :Read Flags: :Read Memory: 5c351c [T] 5c351d [T] 5c351e [T] 5c351f [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c351c: ds: 23: si: 5c351c: :Read Flags: :Read Memory: 5c351c [T] 5c351d [T] 5c351e [T] 5c351f [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c492c: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c492c: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3520: ds: 23: si: 5c3520: :Read Flags: :Read Memory: 5c3520 [T] 5c3521 [T] 5c3522 [T] 5c3523 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3520: ds: 23: si: 5c3520: :Read Flags: :Read Memory: 5c3520 [T] 5c3521 [T] 5c3522 [T] 5c3523 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4930: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4930: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3524: ds: 23: si: 5c3524: :Read Flags: :Read Memory: 5c3524 [T] 5c3525 [T] 5c3526 [T] 5c3527 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3524: ds: 23: si: 5c3524: :Read Flags: :Read Memory: 5c3524 [T] 5c3525 [T] 5c3526 [T] 5c3527 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4934: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4934: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3528: ds: 23: si: 5c3528: :Read Flags: :Read Memory: 5c3528 [T] 5c3529 [T] 5c352a [T] 5c352b [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3528: ds: 23: si: 5c3528: :Read Flags: :Read Memory: 5c3528 [T] 5c3529 [T] 5c352a [T] 5c352b [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4938: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4938: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c352c: ds: 23: si: 5c352c: :Read Flags: :Read Memory: 5c352c [T] 5c352d [T] 5c352e [T] 5c352f [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c352c: ds: 23: si: 5c352c: :Read Flags: :Read Memory: 5c352c [T] 5c352d [T] 5c352e [T] 5c352f [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c493c: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c493c: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3530: ds: 23: si: 5c3530: :Read Flags: :Read Memory: 5c3530 [T] 5c3531 [T] 5c3532 [T] 5c3533 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3530: ds: 23: si: 5c3530: :Read Flags: :Read Memory: 5c3530 [T] 5c3531 [T] 5c3532 [T] 5c3533 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4940: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4940: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3534: ds: 23: si: 5c3534: :Read Flags: :Read Memory: 5c3534 [T] 5c3535 [T] 5c3536 [T] 5c3537 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3534: ds: 23: si: 5c3534: :Read Flags: :Read Memory: 5c3534 [T] 5c3535 [T] 5c3536 [T] 5c3537 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4944: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4944: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3538: ds: 23: si: 5c3538: :Read Flags: :Read Memory: 5c3538 [T] 5c3539 [T] 5c353a [T] 5c353b [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3538: ds: 23: si: 5c3538: :Read Flags: :Read Memory: 5c3538 [T] 5c3539 [T] 5c353a [T] 5c353b [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4948: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4948: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c353c: ds: 23: si: 5c353c: :Read Flags: :Read Memory: 5c353c [T] 5c353d [T] 5c353e [T] 5c353f [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c353c: ds: 23: si: 5c353c: :Read Flags: :Read Memory: 5c353c [T] 5c353d [T] 5c353e [T] 5c353f [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c494c: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c494c: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3540: ds: 23: si: 5c3540: :Read Flags: :Read Memory: 5c3540 [T] 5c3541 [T] 5c3542 [T] 5c3543 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3540: ds: 23: si: 5c3540: :Read Flags: :Read Memory: 5c3540 [T] 5c3541 [T] 5c3542 [T] 5c3543 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4950: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4950: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3544: ds: 23: si: 5c3544: :Read Flags: :Read Memory: 5c3544 [T] 5c3545 [T] 5c3546 [T] 5c3547 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3544: ds: 23: si: 5c3544: :Read Flags: :Read Memory: 5c3544 [T] 5c3545 [T] 5c3546 [T] 5c3547 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4954: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4954: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3548: ds: 23: si: 5c3548: :Read Flags: :Read Memory: 5c3548 [T] 5c3549 [T] 5c354a [T] 5c354b [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3548: ds: 23: si: 5c3548: :Read Flags: :Read Memory: 5c3548 [T] 5c3549 [T] 5c354a [T] 5c354b [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4958: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4958: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c354c: ds: 23: si: 5c354c: :Read Flags: :Read Memory: 5c354c [T] 5c354d [T] 5c354e [T] 5c354f [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c354c: ds: 23: si: 5c354c: :Read Flags: :Read Memory: 5c354c [T] 5c354d [T] 5c354e [T] 5c354f [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c495c: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c495c: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3550: ds: 23: si: 5c3550: :Read Flags: :Read Memory: 5c3550 [T] 5c3551 [T] 5c3552 [T] 5c3553 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3550: ds: 23: si: 5c3550: :Read Flags: :Read Memory: 5c3550 [T] 5c3551 [T] 5c3552 [T] 5c3553 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4960: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4960: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3554: ds: 23: si: 5c3554: :Read Flags: :Read Memory: 5c3554 [T] 5c3555 [T] 5c3556 [T] 5c3557 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3554: ds: 23: si: 5c3554: :Read Flags: :Read Memory: 5c3554 [T] 5c3555 [T] 5c3556 [T] 5c3557 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4964: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4964: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3558: ds: 23: si: 5c3558: :Read Flags: :Read Memory: 5c3558 [T] 5c3559 [T] 5c355a [T] 5c355b [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3558: ds: 23: si: 5c3558: :Read Flags: :Read Memory: 5c3558 [T] 5c3559 [T] 5c355a [T] 5c355b [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4968: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4968: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c355c: ds: 23: si: 5c355c: :Read Flags: :Read Memory: 5c355c [T] 5c355d [T] 5c355e [T] 5c355f [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c355c: ds: 23: si: 5c355c: :Read Flags: :Read Memory: 5c355c [T] 5c355d [T] 5c355e [T] 5c355f [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c496c: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c496c: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3560: ds: 23: si: 5c3560: :Read Flags: :Read Memory: 5c3560 [T] 5c3561 [T] 5c3562 [T] 5c3563 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3560: ds: 23: si: 5c3560: :Read Flags: :Read Memory: 5c3560 [T] 5c3561 [T] 5c3562 [T] 5c3563 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4970: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4970: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3564: ds: 23: si: 5c3564: :Read Flags: :Read Memory: 5c3564 [T] 5c3565 [T] 5c3566 [T] 5c3567 [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3564: ds: 23: si: 5c3564: :Read Flags: :Read Memory: 5c3564 [T] 5c3565 [T] 5c3566 [T] 5c3567 [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4974: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4974: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f5:Disasm mov eax, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3568: ds: 23: si: 5c3568: :Read Flags: :Read Memory: 5c3568 [T] 5c3569 [T] 5c356a [T] 5c356b [T] :
+TID: 2:IP: 772108f7:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108f9:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fc:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 772108fe:Disasm mov edx, dword ptr [esi]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: esi: 5c3568: ds: 23: si: 5c3568: :Read Flags: :Read Memory: 5c3568 [T] 5c3569 [T] 5c356a [T] 5c356b [T] :
+TID: 2:IP: 77210903:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77210908:Disasm jnz 0x7721958c:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 7721090e:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strncpy:Read Regs: edi: 5c4978: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 5c4978: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4918: ds: 23: cl: 5c4918: ch: 5c4918: cx: 5c4918: :Read Flags: :Read Memory: 5c4918 [T] 5c4919 [T] 5c491a [T] 5c491b [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 4554534b: al[T]: 4554534b: ah[T]: 4554534b: ax[T]: 4554534b: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 4554534b: al[T]: 4554534b: ah[T]: 4554534b: ax[T]: 4554534b: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: c453524a: eax[T]: baabacb4: al[T]: baabacb4: ah[T]: baabacb4: ax[T]: baabacb4: dl[T]: c453524a: dh[T]: c453524a: dx[T]: c453524a: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4918: ds: 23: cl: 5c4918: ch: 5c4918: cx: 5c4918: :Read Flags: :Read Memory: 5c4918 [T] 5c4919 [T] 5c491a [T] 5c491b [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7ef8fefe: al[T]: 7ef8fefe: ah[T]: 7ef8fefe: ax[T]: 7ef8fefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f990: edx[T]: 4554534b: ds: 23: dl[T]: 4554534b: dh[T]: 4554534b: dx[T]: 4554534b: di: 345f990: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c491c: ds: 23: cl: 5c491c: ch: 5c491c: cx: 5c491c: :Read Flags: :Read Memory: 5c491c [T] 5c491d [T] 5c491e [T] 5c491f [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61612054: al[T]: 61612054: ah[T]: 61612054: ax[T]: 61612054: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61612054: al[T]: 61612054: ah[T]: 61612054: ax[T]: 61612054: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0601f53: eax[T]: 9e9edfab: al[T]: 9e9edfab: ah[T]: 9e9edfab: ax[T]: 9e9edfab: dl[T]: e0601f53: dh[T]: e0601f53: dx[T]: e0601f53: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c491c: ds: 23: cl: 5c491c: ch: 5c491c: cx: 5c491c: :Read Flags: :Read Memory: 5c491c [T] 5c491d [T] 5c491e [T] 5c491f [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efec0f8: al[T]: 7efec0f8: ah[T]: 7efec0f8: ax[T]: 7efec0f8: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f994: edx[T]: 61612054: ds: 23: dl[T]: 61612054: dh[T]: 61612054: dx[T]: 61612054: di: 345f994: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4920: ds: 23: cl: 5c4920: ch: 5c4920: cx: 5c4920: :Read Flags: :Read Memory: 5c4920 [T] 5c4921 [T] 5c4922 [T] 5c4923 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4920: ds: 23: cl: 5c4920: ch: 5c4920: cx: 5c4920: :Read Flags: :Read Memory: 5c4920 [T] 5c4921 [T] 5c4922 [T] 5c4923 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f998: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f998: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4924: ds: 23: cl: 5c4924: ch: 5c4924: cx: 5c4924: :Read Flags: :Read Memory: 5c4924 [T] 5c4925 [T] 5c4926 [T] 5c4927 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4924: ds: 23: cl: 5c4924: ch: 5c4924: cx: 5c4924: :Read Flags: :Read Memory: 5c4924 [T] 5c4925 [T] 5c4926 [T] 5c4927 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f99c: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f99c: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4928: ds: 23: cl: 5c4928: ch: 5c4928: cx: 5c4928: :Read Flags: :Read Memory: 5c4928 [T] 5c4929 [T] 5c492a [T] 5c492b [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4928: ds: 23: cl: 5c4928: ch: 5c4928: cx: 5c4928: :Read Flags: :Read Memory: 5c4928 [T] 5c4929 [T] 5c492a [T] 5c492b [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9a0: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9a0: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c492c: ds: 23: cl: 5c492c: ch: 5c492c: cx: 5c492c: :Read Flags: :Read Memory: 5c492c [T] 5c492d [T] 5c492e [T] 5c492f [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c492c: ds: 23: cl: 5c492c: ch: 5c492c: cx: 5c492c: :Read Flags: :Read Memory: 5c492c [T] 5c492d [T] 5c492e [T] 5c492f [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9a4: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9a4: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4930: ds: 23: cl: 5c4930: ch: 5c4930: cx: 5c4930: :Read Flags: :Read Memory: 5c4930 [T] 5c4931 [T] 5c4932 [T] 5c4933 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4930: ds: 23: cl: 5c4930: ch: 5c4930: cx: 5c4930: :Read Flags: :Read Memory: 5c4930 [T] 5c4931 [T] 5c4932 [T] 5c4933 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9a8: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9a8: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4934: ds: 23: cl: 5c4934: ch: 5c4934: cx: 5c4934: :Read Flags: :Read Memory: 5c4934 [T] 5c4935 [T] 5c4936 [T] 5c4937 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4934: ds: 23: cl: 5c4934: ch: 5c4934: cx: 5c4934: :Read Flags: :Read Memory: 5c4934 [T] 5c4935 [T] 5c4936 [T] 5c4937 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9ac: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9ac: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4938: ds: 23: cl: 5c4938: ch: 5c4938: cx: 5c4938: :Read Flags: :Read Memory: 5c4938 [T] 5c4939 [T] 5c493a [T] 5c493b [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4938: ds: 23: cl: 5c4938: ch: 5c4938: cx: 5c4938: :Read Flags: :Read Memory: 5c4938 [T] 5c4939 [T] 5c493a [T] 5c493b [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9b0: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9b0: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c493c: ds: 23: cl: 5c493c: ch: 5c493c: cx: 5c493c: :Read Flags: :Read Memory: 5c493c [T] 5c493d [T] 5c493e [T] 5c493f [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c493c: ds: 23: cl: 5c493c: ch: 5c493c: cx: 5c493c: :Read Flags: :Read Memory: 5c493c [T] 5c493d [T] 5c493e [T] 5c493f [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9b4: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9b4: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4940: ds: 23: cl: 5c4940: ch: 5c4940: cx: 5c4940: :Read Flags: :Read Memory: 5c4940 [T] 5c4941 [T] 5c4942 [T] 5c4943 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4940: ds: 23: cl: 5c4940: ch: 5c4940: cx: 5c4940: :Read Flags: :Read Memory: 5c4940 [T] 5c4941 [T] 5c4942 [T] 5c4943 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9b8: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9b8: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4944: ds: 23: cl: 5c4944: ch: 5c4944: cx: 5c4944: :Read Flags: :Read Memory: 5c4944 [T] 5c4945 [T] 5c4946 [T] 5c4947 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4944: ds: 23: cl: 5c4944: ch: 5c4944: cx: 5c4944: :Read Flags: :Read Memory: 5c4944 [T] 5c4945 [T] 5c4946 [T] 5c4947 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9bc: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9bc: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4948: ds: 23: cl: 5c4948: ch: 5c4948: cx: 5c4948: :Read Flags: :Read Memory: 5c4948 [T] 5c4949 [T] 5c494a [T] 5c494b [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4948: ds: 23: cl: 5c4948: ch: 5c4948: cx: 5c4948: :Read Flags: :Read Memory: 5c4948 [T] 5c4949 [T] 5c494a [T] 5c494b [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9c0: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9c0: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c494c: ds: 23: cl: 5c494c: ch: 5c494c: cx: 5c494c: :Read Flags: :Read Memory: 5c494c [T] 5c494d [T] 5c494e [T] 5c494f [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c494c: ds: 23: cl: 5c494c: ch: 5c494c: cx: 5c494c: :Read Flags: :Read Memory: 5c494c [T] 5c494d [T] 5c494e [T] 5c494f [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9c4: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9c4: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4950: ds: 23: cl: 5c4950: ch: 5c4950: cx: 5c4950: :Read Flags: :Read Memory: 5c4950 [T] 5c4951 [T] 5c4952 [T] 5c4953 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4950: ds: 23: cl: 5c4950: ch: 5c4950: cx: 5c4950: :Read Flags: :Read Memory: 5c4950 [T] 5c4951 [T] 5c4952 [T] 5c4953 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9c8: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9c8: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4954: ds: 23: cl: 5c4954: ch: 5c4954: cx: 5c4954: :Read Flags: :Read Memory: 5c4954 [T] 5c4955 [T] 5c4956 [T] 5c4957 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4954: ds: 23: cl: 5c4954: ch: 5c4954: cx: 5c4954: :Read Flags: :Read Memory: 5c4954 [T] 5c4955 [T] 5c4956 [T] 5c4957 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9cc: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9cc: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4958: ds: 23: cl: 5c4958: ch: 5c4958: cx: 5c4958: :Read Flags: :Read Memory: 5c4958 [T] 5c4959 [T] 5c495a [T] 5c495b [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4958: ds: 23: cl: 5c4958: ch: 5c4958: cx: 5c4958: :Read Flags: :Read Memory: 5c4958 [T] 5c4959 [T] 5c495a [T] 5c495b [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9d0: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9d0: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c495c: ds: 23: cl: 5c495c: ch: 5c495c: cx: 5c495c: :Read Flags: :Read Memory: 5c495c [T] 5c495d [T] 5c495e [T] 5c495f [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c495c: ds: 23: cl: 5c495c: ch: 5c495c: cx: 5c495c: :Read Flags: :Read Memory: 5c495c [T] 5c495d [T] 5c495e [T] 5c495f [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9d4: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9d4: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4960: ds: 23: cl: 5c4960: ch: 5c4960: cx: 5c4960: :Read Flags: :Read Memory: 5c4960 [T] 5c4961 [T] 5c4962 [T] 5c4963 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4960: ds: 23: cl: 5c4960: ch: 5c4960: cx: 5c4960: :Read Flags: :Read Memory: 5c4960 [T] 5c4961 [T] 5c4962 [T] 5c4963 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9d8: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9d8: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4964: ds: 23: cl: 5c4964: ch: 5c4964: cx: 5c4964: :Read Flags: :Read Memory: 5c4964 [T] 5c4965 [T] 5c4966 [T] 5c4967 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4964: ds: 23: cl: 5c4964: ch: 5c4964: cx: 5c4964: :Read Flags: :Read Memory: 5c4964 [T] 5c4965 [T] 5c4966 [T] 5c4967 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9dc: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9dc: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4968: ds: 23: cl: 5c4968: ch: 5c4968: cx: 5c4968: :Read Flags: :Read Memory: 5c4968 [T] 5c4969 [T] 5c496a [T] 5c496b [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4968: ds: 23: cl: 5c4968: ch: 5c4968: cx: 5c4968: :Read Flags: :Read Memory: 5c4968 [T] 5c4969 [T] 5c496a [T] 5c496b [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9e0: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9e0: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c496c: ds: 23: cl: 5c496c: ch: 5c496c: cx: 5c496c: :Read Flags: :Read Memory: 5c496c [T] 5c496d [T] 5c496e [T] 5c496f [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c496c: ds: 23: cl: 5c496c: ch: 5c496c: cx: 5c496c: :Read Flags: :Read Memory: 5c496c [T] 5c496d [T] 5c496e [T] 5c496f [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9e4: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9e4: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4970: ds: 23: cl: 5c4970: ch: 5c4970: cx: 5c4970: :Read Flags: :Read Memory: 5c4970 [T] 5c4971 [T] 5c4972 [T] 5c4973 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4970: ds: 23: cl: 5c4970: ch: 5c4970: cx: 5c4970: :Read Flags: :Read Memory: 5c4970 [T] 5c4971 [T] 5c4972 [T] 5c4973 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9e8: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9e8: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4974: ds: 23: cl: 5c4974: ch: 5c4974: cx: 5c4974: :Read Flags: :Read Memory: 5c4974 [T] 5c4975 [T] 5c4976 [T] 5c4977 [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4974: ds: 23: cl: 5c4974: ch: 5c4974: cx: 5c4974: :Read Flags: :Read Memory: 5c4974 [T] 5c4975 [T] 5c4976 [T] 5c4977 [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9ec: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9ec: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dbd:Disasm mov eax, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4978: ds: 23: cl: 5c4978: ch: 5c4978: cx: 5c4978: :Read Flags: :Read Memory: 5c4978 [T] 5c4979 [T] 5c497a [T] 5c497b [T] :
+TID: 2:IP: 77218dbf:Disasm add edx, eax:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx: 7efefeff: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: dl: 7efefeff: dh: 7efefeff: dx: 7efefeff: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc1:Disasm xor eax, 0xffffffff:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 61616161: al[T]: 61616161: ah[T]: 61616161: ax[T]: 61616161: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc4:Disasm xor eax, edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edx[T]: e0606060: eax[T]: 9e9e9e9e: al[T]: 9e9e9e9e: ah[T]: 9e9e9e9e: ax[T]: 9e9e9e9e: dl[T]: e0606060: dh[T]: e0606060: dx[T]: e0606060: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dc6:Disasm mov edx, dword ptr [ecx]:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: ecx: 5c4978: ds: 23: cl: 5c4978: ch: 5c4978: cx: 5c4978: :Read Flags: :Read Memory: 5c4978 [T] 5c4979 [T] 5c497a [T] 5c497b [T] :
+TID: 2:IP: 77218dcb:Disasm test eax, 0x81010100:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eax[T]: 7efefefe: al[T]: 7efefefe: ah[T]: 7efefefe: ax[T]: 7efefefe: :Read Flags: :Read Memory: :
+TID: 2:IP: 77218dd0:Disasm jnz 0x77218dd9:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: eflags[T]: 246: :Read Flags: 0:[T 40:zf ]:Values:246:Read Memory: :
+TID: 2:IP: 77218dd2:Disasm mov dword ptr [edi], edx:IMG: C:\Windows\system32\msvcrt.dll:RTN: strcat:Read Regs: edi: 345f9f0: edx[T]: 61616161: ds: 23: dl[T]: 61616161: dh[T]: 61616161: dx[T]: 61616161: di: 345f9f0: :Read Flags: :Read Memory: :
+TID: 2:IP: 401806:Disasm leave :IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: ebp: 345f9d8: esp: 345f980: ss: 23: bp: 345f9d8: sp: 345f980: :Read Flags: :Read Memory: 345f9d8 [T] 345f9d9 [T] 345f9da [T] 345f9db [T] :
+TID: 2:IP: 401807:Disasm ret :IMG: C:\Users\sunirge\Downloads\vulnserver\vulnserver.exe:RTN: unnamedImageEntryPoint:Read Regs: esp: 345f9dc: ss: 23: sp: 345f9dc: :Read Flags: :Read Memory: 345f9dc [T] 345f9dd [T] 345f9de [T] 345f9df [T] :
+TID: 2 Exception reason:  Exception code c0000005 Value: 00000000
+Unhandled Exception Thread 2: name UnhandledExceptionFilter: exception code c0000005: Is not continuable? 0: address 61616161
+Exception param 0: 0
+Exception param 1: 61616161
+Access Violation
+Read exception
+@ address : 61616161
+EIP: 61616161
+EBP: 61616161
+ESP: 345f9e0
+EFlags: 246
+SegCs: 1b
+SegSs: 23
+ESI: 0
+EDI: 0
+Eax: 345f990
+Ebx: 7c
+Ecx: 5c4980
+Edx: 0
+SegDs: 23
+SegEs: 23
+SegFs: 3b
+SegGs: 0
+IMG name:: Unknown
+IMG StartAddress: 0
+RTN name: Unknown
+CrashRVA:: 61616161
+Exception, exiting application
